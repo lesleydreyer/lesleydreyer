@@ -1,0 +1,18 @@
+.header {
+    height: 95vh;
+    display: inline-block;
+    background-color: black;
+    background-image: url(../../images/LesleyPic2.jpg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hr {
+    margin-top: .9rem;
+    margin-bottom: 1.1rem;
+    border-top: none;
+    border: 3px solid $color-green;
+    width: 25%;
+    border-radius: 3px;
+}

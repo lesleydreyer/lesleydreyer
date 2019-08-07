@@ -1,0 +1,354 @@
+/* might play around with later to make fonts scale
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}*/
+
+* {
+  padding:0;
+  margin: 0; 
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+
+@font-face {
+font-family: Akrobat;
+src: url("../fonts/Akrobat/Akrobat-Regular.woff");
+}
+@font-face {
+font-family: Akrobat2;
+src: url("../fonts/Akrobat/Akrobat-Bold.woff");
+}
+@font-face {
+font-family: Akrobat3;
+src: url("../fonts/Akrobat/Akrobat-ExtraBold.woff");
+}
+
+@font-face {
+font-family: Script1;
+src: url("../fonts/Monopola Script DEMO.woff");
+}
+
+@font-face {
+font-family: Script2;
+src: url("../fonts/Rustelyn.woff");
+}
+@font-face {
+font-family: Script3;
+src: url("../fonts/Tahu!.woff");
+}
+
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+
+/* -------------------------------- */
+/* NAVIGATION BAR */
+/* -------------------------------- */
+
+.nav {
+  /*border-bottom: 3px solid hsl(2, 100%, 72%);*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+  /*font-family: Akrobat;
+  font-weight: bold;*/
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: hsl(2, 100%, 72%);
+  padding: 10px; 
+  background-image: url('../images/VerticalStripes.svg');
+  background-size: cover;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  color: black;
+  border-bottom: 1px solid  white;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+/* -------------------------------- */
+/* TEXT rgba(197, 238, 248, 0.5);*/
+/* -------------------------------- */
+
+p {
+  line-height: 130%;
+}
+
+main h1 {
+  font-size: 300%;
+  /*font-family: Akrobat3;
+  text-transform: uppercase;
+    font-family: Questrial;
+  letter-spacing: .1em;
+  font-weight: lighter;*/
+  margin-bottom: 20px;
+  line-height: 110%;
+}
+
+.title {
+  margin-top: -10px;
+  color: hsl(2, 100%, 72%);
+  font-family: Script3;
+  text-transform: lowercase;
+  font-size: 2.22em;
+  text-rendering: geometricPrecision;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+/* -------------------------------- */
+/* PROJECTS */
+/* -------------------------------- */
+
+.project-list {
+  list-style: none;
+  width: 100%;
+  background-color: rgba(197, 238, 248, 1);
+  margin: 20px auto;
+  max-width: 900px;
+  padding-bottom: 20px;
+}
+
+.project-list li:not(.last) {
+  border-bottom: 3px solid white;
+  padding: 20px;
+}
+
+.project-list p {
+  font-family: Montserrat;
+  font-weight: lighter;
+  margin: 10px;
+}
+.project-list h2 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+.project-list a, .resume a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-family: Akrobat;
+  letter-spacing: .1em;
+}
+
+.project-list a::before {
+  content: ' ';
+}
+
+.project-list a::after {
+  content: ' ';
+}
+
+.project-list a:hover {
+  color: hsl(2, 100%, 72%);
+}
+
+.project-list img {
+  width: 70vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  max-width: 750px;
+}
+
+
+/* -------------------------------- */
+/* CONTACT */
+/* -------------------------------- */
+#contact {
+  margin: 20px;
+}
+
+.fab {
+  font-size: 1.5em;
+  color: black;
+  margin: 10px;
+}
+
+#contact a {
+  color: black;
+  text-decoration: none;
+}
+
+#contact a:hover, .fab:hover {
+  color: hsl(2, 100%, 72%);
+}
+
+/*resume is above with project-list*/
+
+
+/* -------------------------------- */
+/* PROJECT SHOWCASE */
+/* -------------------------------- */
+/*
+.project {
+  background-color: rgb(197, 238, 248);
+  height: auto;
+  border: 5px solid white;
+}*/
+
+.section-projects {
+  padding: 0;
+}
+.project-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.project-showcase li {
+  display: block;
+  float: left;
+}
+
+.project-photo {
+  width: 100%;
+  margin: 0;  
+  height: 200px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.project-photo img {
+  opacity: 0.7;
+  width: 100%;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.project-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+  p.tech-stack-list {
+    font-size: .9em;
+    letter-spacing: .1em;
+    font-weight: bold;
+    font-family: Akrobat;
+    margin-top: 10px;
+  }
+
+
+/*//////  MEDIA QUERIES  //////
+
+@media  screen and (min-device-width : 768px) and (orientation : landscape) {
+    .logo {
+    max-width: 10vw;
+  }
+}
+  
+  
+@media  screen and (orientation : landscape) {
+  .logo {
+    max-width: 50vw;
+    min-width: 40vw;
+  }
+}*/
+
+
+
+  .lesley-photo {
+    max-width: 80vw;
+  }
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width: 479px) {
+  .lesley-photo  {
+    max-width: 60vw;
+  }
+}
+    
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+  .lesley-photo{
+    max-width: 30vw;    
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+  .lesley-photo{
+    max-width: 30vw;
+    max-height: 50vh;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width: 1199px) {
+  .lesley-photo{
+    max-width: 30vw;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .lesley-photo {
+    max-width: 20vw;
+  }
+}
+
+/* We're setting our own focus outline here
+ because we want to be sure it is visible against
+ our blue background. */
+#searchResults a:hover,
+#searchResults a:focus,
+#js-search-form input:focus,
+#js-search-form .search button:focus {
+  outline: 5px solid blue;
+}

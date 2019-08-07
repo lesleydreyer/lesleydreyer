@@ -1,0 +1,25 @@
+body {
+    font-family: "Montserrat", "Questrial", sans-serif;
+}
+
+
+.heading-primary {
+    &--main {
+        color: white;
+        font-weight: 800;
+        font-size: 1.1em;
+    }
+
+    &--sub {
+        color: $color-yellow;
+        font-family: 'Just Another Hand', cursive;
+        transform: scale(3, 1);
+        letter-spacing: 0.03em;
+        transform: scale(1.1, 1);
+        font-size: 1.1rem;
+    }
+
+    &--description {
+        color: white;
+    }
+}
