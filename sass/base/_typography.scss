@@ -4,22 +4,25 @@ body {
 
 
 .heading-primary {
+
     &--main {
         color: white;
         font-weight: 800;
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
 
     &--sub {
         color: $color-yellow;
         font-family: 'Just Another Hand', cursive;
-        transform: scale(3, 1);
         letter-spacing: 0.03em;
-        transform: scale(1.1, 1);
-        font-size: 1.1rem;
+        transform: scale(1.2, 1);
+        font-size: 4rem;
     }
 
     &--description {
         color: white;
+        font-size: 1.6rem;
+        font-weight: 500;
     }
+
 }

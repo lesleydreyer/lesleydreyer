@@ -1,18 +1,51 @@
 .header {
     height: 95vh;
+    width: 100vw;
     display: inline-block;
+    text-align: center;
     background-color: black;
-    background-image: url(../../images/LesleyPic2.jpg);
-    background-position: bottom;
+    background-image: url(../../images/LesleyPic2-min.jpg);
+    background-position: bottom right;
     background-size: contain;
     background-repeat: no-repeat;
+    padding: 1.2rem;
+
+    @media screen and (orientation: landscape) {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+        padding-left: 3rem;
+        background-size: 75vh;
+        background-position-x: 90%;
+    }
+}
+
+.heading-primary {
+    @media screen and (orientation: landscape) {
+        text-align: left;
+        width: 50vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .heading-primary--sub {
+        padding-left: 3rem;
+    }
+
+    .heading-primary--description {
+        width: 50vw;
+    }
 }
 
 .hr {
-    margin-top: .9rem;
-    margin-bottom: 1.1rem;
+    /*top right bottom left;*/
+    margin: .9rem auto 1.1rem auto;
     border-top: none;
     border: 3px solid $color-green;
     width: 25%;
     border-radius: 3px;
+
+    @media screen and (orientation: landscape) {
+        margin: .9rem 1rem 1.1rem .05rem;
+    }
 }
