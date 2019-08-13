@@ -1,5 +1,6 @@
 // FONT
 $default-font-size: 16px;
+$font-family-base:  "Montserrat", "Questrial", sans-serif;
 
 // COLORS
 $color-green: #24A349;
@@ -8,8 +9,6 @@ $color-yellow: #F8ED3F;
 $color-beige-light: #EAE8D7;
 $color-beige-dark: #D9D6B7;
 
-// GRID
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
+
+//NAVBAR
+$navbar-height: 35px;

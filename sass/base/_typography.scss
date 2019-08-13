@@ -1,5 +1,5 @@
 body {
-    font-family: "Montserrat", "Questrial", sans-serif;
+    font-family: $font-family-base;
 }
 
 
@@ -16,6 +16,7 @@ body {
         font-family: 'Just Another Hand', cursive;
         letter-spacing: 0.03em;
         transform: scale(1.2, 1);
+        transform-origin: left;
         font-size: 4rem;
     }
 
@@ -25,4 +26,9 @@ body {
         font-weight: 500;
     }
 
+}
+
+.heading-secondary {
+    font-weight: 700;
+    text-transform: uppercase;
 }

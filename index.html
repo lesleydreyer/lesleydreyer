@@ -5,73 +5,56 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Lesley Dreyer - Full Stack Developer</title>
-  <!--<link href='https://cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css' rel='stylesheet'>-->
+  <link href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/float-grid.css" />
   <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <nav class="navbar navbar-default" id="navbar">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Brand</a>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="navbar-form navbar-left">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
   </nav>
 
 
@@ -87,59 +70,153 @@
     </div>
   </header>
   <main>
-    <h3>test test</h3>
-    <section class="section-test">
-      <div class="container">
-        <div class="row">
-          <h2 class="heading-secondary">test</h2>
-          <p class="col-xs-3">test</p>
-          <p class="col-xs-3">test</p>
-          <p class="col-xs-3">test</p>
-        </div>
-      </div>
-    </section>
-
     <section class="section-about">
-      <div class="row">
-        <h2 class="heading-secondary">About</h2>
-        <div class="col-2-of-3">
-          <p>
-            I am a full stack developer with graphic design experience. I have been building projects in my free time
-            using mostly Javascript, React, Redux and Node.js. However, I have taken classes in other languages in the
-            past, and am always up to learning new technologies, I would love to join a team where I can contribute,
-            learn and grow as a developer full time. I work hard, take initiative to think outside the box, and aim to
-            surpass the evolving needs and expectations of my customers each and every day.
-          </p>
-          <p>
-            In my free time you’ll find me stuffing my face with tacos, chasing a very energetic golden retriever around
-            a couch, or playing board games with friends.
-          </p>
-        </div>
-        <div class="col-1-of-3 devicons-block">
-          <span class="devicons-svg"><img src="images/devicons/react.svg" alt="React"></span>
-          <span class="devicons-svg"><img src="images/devicons/redux.svg" alt="Redux"></span>
-          <span class="devicons devicons-javascript"></span>
-          <span class="devicons devicons-jquery"></span>
-          <span class="devicons devicons-nodejs"></span>
-          <span class="devicons devicons-npm"></span>
-          <span class="devicons devicons-database"></span>
-          <span class="devicons devicons-mongodb"></span>
-          <span class="devicons devicons-html5"></span>
-          <span class="devicons devicons-css3"></span>
-          <span class="devicons devicons-sass"></span>
-          <span class="devicons devicons-gulp"></span>
-          <span class="devicons devicons-heroku"></span>
-          <span class="devicons devicons- "></span>
-          <span class="devicons devicons-visualstudio"></span>
-          <span class="devicons-svg"><img src="images/devicons/illustrator.svg" alt="Illustrator"></span>
-          <span class="devicons-svg"><img src="images/devicons/photoshop.svg" alt="Photoshop"></span>
+      <div class="container">
+  
+        <div class="row">
+          <div class="col-sm-9">
+            <h2 class="heading-secondary">About</h2>
+            <p>
+              I am a full stack developer with graphic design experience. I have been building projects in my free time
+              using mostly Javascript, React, Redux and Node.js. However, I have taken classes in other languages in the
+              past, and am always up to learning new technologies, I would love to join a team where I can contribute,
+              learn and grow as a developer full time. I work hard, take initiative to think outside the box, and aim to
+              surpass the evolving needs and expectations of my customers each and every day.
+            </p>
+            <p>
+              In my free time you’ll find me stuffing my face with tacos, chasing a very energetic golden retriever
+              around
+              a couch, or playing board games with friends.
+            </p>
+          </div>
+          <div class="col-sm-3 devicons-block">
+            <!-- options for devicons found
+              https://konpa.github.io/devicon/
+              https://icongr.am/
+              https://simpleicons.org/
+              https://github.com/simple-icons/simple-icons/blob/develop/README.md
+              https://vorillaz.github.io/devicons/#/main
+            -->
+            <img alt="React" title="React" class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg" />
+            <img alt="Redux" title="Redux" class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/redux.svg" />
+            <!-- <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vue-dot-js.svg" /> -->
+            <img 
+              alt="JavaScript" title="JavaScript" class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" />
+            <img 
+              alt="jQuery" title="jQuery" class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jquery.svg" />
+            <img 
+              alt="Node.js" title="Node.js" 
+              class="devicons-block__icon-image devicons-block__icon-image--bigger-2"
+              src="https://icongr.am/devicon/nodejs-plain-wordmark.svg?size={number}&color={hex}" />
+            <img 
+              alt="npm (Node Package Manager)" 
+              title="npm (Node Package Manager)" 
+              class="devicons-block__icon-image devicons-block__icon-image--bigger-1"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/npm.svg" />
+            <img 
+              alt="SQL (Structured Query Language)" 
+              title="SQL (Structured Query Language)" 
+              class="devicons-block__icon-image"
+              src="https://icongr.am/material/database.svg?size={number}&color={hex}" />
+            <img 
+              alt="NoSQL/MongoDB" 
+              title="NoSQL/MongoDB" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mongodb.svg" />
+            <img 
+              alt="HTML5"
+               title="HTML5" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" />
+            <img 
+              alt="CSS3" 
+              title="CSS3" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" />
+            <img 
+              alt="Sass" 
+              title="Sass" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/sass.svg" />
+            <img 
+              alt="Bootstrap" 
+              title="Bootstrap" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bootstrap.svg" />
+            <img 
+              alt="Gulp" 
+              title="Gulp" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gulp.svg" />
+            <img 
+              alt="GIT" 
+              title="GIT" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" />
+            <img 
+              alt="Github" 
+              title="Github" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+            <img 
+              alt="Heroku" 
+              title="Heroku" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/heroku.svg" />
+            <img 
+              alt="TravisCI" 
+              title="TravisCI" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/travisci.svg" />
+            <img 
+              alt="Visual Studio Code" 
+              title="Visual Studio Code" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudiocode.svg" />
+            <img 
+              alt="Adobe Illustrator, Photoshop, InDesign" 
+              title="Adobe Illustrator, Photoshop, InDesign" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobeillustrator.svg" />
+            <img 
+              alt="Adobe Illustrator, Photoshop, InDesign" 
+              title="Adobe Illustrator, Photoshop, InDesign" 
+              class="devicons-block__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobephotoshop.svg" />
+
+            <!-- SAVING FOR LATER - the redux/photoshop/illustrators i on devicon don't appear to work and supping img makes bigger than the i's 
+              <i class="devicon-react-original"></i>
+            <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/redux.svg" />
+            <span class="devicons-svg"><img src="images/devicons/redux.svg" alt="Redux"></span>
+            <i class="devicon-vuejs-plain"></i>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-jquery-plain"></i>
+            <i class="devicon-nodejs-plain-wordmark"></i>
+            <span class="devicons devicons-npm"></span>
+            <span class="devicons devicons-database"></span>
+            <i class="devicon-mongodb-plain"></i>
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+            <i class="devicon-sass-original"></i>
+            <i class="devicon-gulp-plain"></i>
+            <span class="devicons devicons-heroku"></span>
+            <i class="devicon-travis-plain"></i>
+            <i class="devicon-visualstudio-plain"></i>
+            <i class="devicon-illustrator-plain"></i>
+            <i class="devicon-photoshop-plain"></i> -->
+
+          </div>
         </div>
       </div>
     </section>
   </main>
 
 
-  <!--<script src="https://kit.fontawesome.com/73199622c2.js"></script>-->
+  <!-- <script src="https://kit.fontawesome.com/73199622c2.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

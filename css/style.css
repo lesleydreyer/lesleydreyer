@@ -1,18 +1,4 @@
 @charset "UTF-8";
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-ORDER: Base + typography > general layout + grid > page layout > components
-1em = 16px
-*/
 *,
 *::after,
 *::before {
@@ -22,24 +8,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
-  /*maybe big screens padding: 3rem;*/
-  /*for bootstrap navbar*/
-  padding-top: 70px; }
-  @media only screen and (max-width: 56.25em) {
-    body {
-      padding: 0; } }
+  /*maybe big screens padding: 3rem;*/ }
 
 body {
   font-family: "Montserrat", "Questrial", sans-serif; }
@@ -54,12 +26,17 @@ body {
   font-family: 'Just Another Hand', cursive;
   letter-spacing: 0.03em;
   transform: scale(1.2, 1);
+  transform-origin: left;
   font-size: 4rem; }
 
 .heading-primary--description {
   color: white;
   font-size: 1.6rem;
   font-weight: 500; }
+
+.heading-secondary {
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .u-center-text {
   text-align: center; }
@@ -88,46 +65,6 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.row {
-  max-width: 114rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .row [class^="col-"] {
-        width: 100% !important; } }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
-  .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
-  .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
-  .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
-
 .header {
   height: 95vh;
   width: 100vw;
@@ -155,7 +92,7 @@ body {
 
 @media screen and (orientation: landscape) {
   .heading-primary--sub {
-    padding-left: 3rem; }
+    padding-left: 4.2px; }
   .heading-primary--description {
     width: 50vw; } }
 
@@ -171,17 +108,23 @@ body {
       margin: .9rem 1rem 1.1rem .05rem; } }
 
 .section-about {
-  background-color: gold;
-  padding: 25rem 0;
-  margin-top: -20vh; }
-  @media only screen and (max-width: 56.25em) {
-    .section-about {
-      padding: 20rem 0; } }
+  height: 100vh;
+  margin-top: 1rem; }
 
 .devicons-block {
   border: 1px solid #24A349;
   border-radius: 2px;
   padding: 1rem; }
+  .devicons-block__icon-image {
+    margin: .7rem;
+    width: 2rem;
+    height: 2rem; }
+    .devicons-block__icon-image--bigger-1 {
+      width: 3rem;
+      height: auto; }
+    .devicons-block__icon-image--bigger-2 {
+      width: 4rem;
+      height: auto; }
 
 /*!
  *  Devicons 1.8.0 made by Theodore Vorillas / http://vorillaz.com 
@@ -240,9 +183,6 @@ body {
 
 .devicons-java:before {
   content: ""; }
-
-.devicons-ruby:before {
-  content: ""; }
 
 .devicons-scala:before {
   content: ""; }
@@ -652,45 +592,6 @@ body {
 .devicons-bintray:before {
   content: ""; }
 
-.devicons-terminal:before {
-  content: ""; }
-
-.devicons-code:before {
-  content: ""; }
-
-.devicons-responsive:before {
-  content: ""; }
-
-.devicons-dart:before {
-  content: ""; }
-
-.devicons-aptana:before {
-  content: ""; }
-
-.devicons-mailchimp:before {
-  content: ""; }
-
-.devicons-netbeans:before {
-  content: ""; }
-
-.devicons-dreamweaver:before {
-  content: ""; }
-
-.devicons-brackets:before {
-  content: ""; }
-
-.devicons-eclipse:before {
-  content: ""; }
-
-.devicons-cloud9:before {
-  content: ""; }
-
-.devicons-scrum:before {
-  content: ""; }
-
-.devicons-prolog:before {
-  content: ""; }
-
 .devicons-terminal_badge:before {
   content: ""; }
 
@@ -699,81 +600,3 @@ body {
 
 .devicons-mongodb:before {
   content: ""; }
-
-.devicons-meteor:before {
-  content: ""; }
-
-.devicons-meteorfull:before {
-  content: ""; }
-
-.devicons-fsharp:before {
-  content: ""; }
-
-.devicons-rust:before {
-  content: ""; }
-
-.devicons-ionic:before {
-  content: ""; }
-
-.devicons-sublime:before {
-  content: ""; }
-
-.devicons-appcelerator:before {
-  content: ""; }
-
-.devicons-asterisk:before {
-  content: ""; }
-
-.devicons-aws:before {
-  content: ""; }
-
-.devicons-digital-ocean:before {
-  content: ""; }
-
-.devicons-dlang:before {
-  content: ""; }
-
-.devicons-docker:before {
-  content: ""; }
-
-.devicons-erlang:before {
-  content: ""; }
-
-.devicons-google-cloud-platform:before {
-  content: ""; }
-
-.devicons-grails:before {
-  content: ""; }
-
-.devicons-illustrator:before {
-  content: ""; }
-
-.devicons-intellij:before {
-  content: ""; }
-
-.devicons-materializecss:before {
-  content: ""; }
-
-.devicons-openshift:before {
-  content: ""; }
-
-.devicons-photoshop:before {
-  content: ""; }
-
-.devicons-rackspace:before {
-  content: ""; }
-
-.devicons-react:before {
-  content: ""; }
-
-.devicons-redhat:before {
-  content: ""; }
-
-.devicons-scriptcs:before {
-  content: ""; }
-
-.devicons-sqllite:before {
-  content: ""; }
-
-.devicons-vim:before {
-  content: ""; }
