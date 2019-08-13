@@ -65,6 +65,16 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.footer {
+  background-color: #EAE8D7;
+  bottom: 0;
+  height: 5vh;
+  display: flex; }
+  .footer__copy {
+    text-align: center;
+    margin: auto;
+    font-size: 70%; }
+
 .header {
   height: 95vh;
   width: 100vw;
@@ -108,7 +118,7 @@ body {
       margin: .9rem 1rem 1.1rem .05rem; } }
 
 .section-about {
-  height: 100vh;
+  height: 90vh;
   margin-top: 1rem; }
 
 .devicons-block {
