@@ -25,9 +25,11 @@ body {
   color: #F8ED3F;
   font-family: 'Just Another Hand', cursive;
   letter-spacing: 0.03em;
-  transform: scale(1.2, 1);
-  transform-origin: left;
   font-size: 4rem; }
+  @media screen and (orientation: landscape) {
+    .heading-primary--sub {
+      transform: scale(1.2, 1);
+      transform-origin: left; } }
 
 .heading-primary--description {
   color: white;
@@ -35,8 +37,33 @@ body {
   font-weight: 500; }
 
 .heading-secondary {
-  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-weight: 900;
   text-transform: uppercase; }
+  @media screen and (min-width: 600px) {
+    .heading-secondary {
+      text-align: left; } }
+
+.heading-tertiary {
+  font-family: 'Just Another Hand', cursive;
+  letter-spacing: 0.03em;
+  transform: scale(1.2, 1);
+  text-align: center;
+  font-size: 2.5rem; }
+  @media screen and (orientation: landscape) {
+    .heading-tertiary {
+      transform: scale(1.2, 1);
+      transform-origin: left;
+      text-align: left; } }
+
+.paragraph {
+  text-align: center;
+  font-size: 1.3rem; }
+  @media screen and (min-width: 600px) {
+    .paragraph {
+      text-align: left; } }
 
 .u-center-text {
   text-align: center; }
@@ -117,24 +144,72 @@ body {
     .hr {
       margin: .9rem 1rem 1.1rem .05rem; } }
 
+.navbar-nav {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px; }
+
+.nav-item__icon-image {
+  color: white;
+  filter: invert(0.5);
+  width: 2rem;
+  height: 2rem;
+  margin: .7rem;
+  cursor: pointer; }
+
+.navbar-nav {
+  display: flex; }
+
+.nav-item {
+  margin: auto; }
+
 .section-about {
   height: 90vh;
-  margin-top: 1rem; }
+  padding-top: 3rem;
+  margin: 0 auto;
+  margin-bottom: 12rem; }
+  @media screen and (min-width: 600px) {
+    .section-about {
+      margin-bottom: 0; } }
 
 .devicons-block {
+  text-align: center;
   border: 1px solid #24A349;
   border-radius: 2px;
-  padding: 1rem; }
+  padding: 1rem;
+  text-align: center;
+  max-width: 80vw;
+  margin: 2rem auto;
+  /*@media screen and (min-width: 600px) {
+        margin: 2rem;
+    }*/ }
   .devicons-block__icon-image {
-    margin: .7rem;
-    width: 2rem;
-    height: 2rem; }
+    margin: .6rem;
+    width: auto;
+    height: 2.7rem; }
     .devicons-block__icon-image--bigger-1 {
-      width: 3rem;
-      height: auto; }
+      width: auto;
+      height: 3rem; }
     .devicons-block__icon-image--bigger-2 {
-      width: 4rem;
-      height: auto; }
+      width: auto;
+      height: 5rem; }
+  .devicons-block__and-more {
+    background-color: #D9D6B7;
+    position: relative;
+    bottom: -20px;
+    height: 4rem;
+    width: 30%;
+    margin: 0 auto;
+    clip-path: polygon(0 4%, 100% 0, 94% 91%, 5% 100%); }
+    @media screen and (min-width: 600px) {
+      .devicons-block__and-more {
+        width: 60%; } }
+
+.section-projects {
+  padding-top: 3rem;
+  background-color: #EAE8D7;
+  height: 90vh; }
 
 /*!
  *  Devicons 1.8.0 made by Theodore Vorillas / http://vorillaz.com 

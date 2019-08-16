@@ -19,48 +19,47 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-end">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span>MENU</span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <img alt="Github" title="Github" class="nav-item__icon-image"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <img alt="Linkedin" title="Linkedin" class="nav-item__icon-image"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resume</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
 
 
-  <header class="header">
-    <div>
+  <header class="header" id="home">
+    <div id="home">
       <h1 class="heading-primary">
         <span class="heading-primary--main u-display-block">Lesley Dreyer</span>
         <span class="heading-primary--sub u-display-block">full stack developer</span>
@@ -69,21 +68,62 @@
       <p class="heading-primary--description">I'm a full stack developer and graphic designer based in Arizona.</p>
     </div>
   </header>
+
+
+  <!--WHITE NAV BAR-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#home">
+      <img src="./images/LesleyDreyerLogo.svg" width="200rem" height="auto" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resume</a>
+        </li>
+        <li class="nav-item">
+          <img alt="Github" title="Github" class="nav-item__icon-image"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+        </li>
+        <li class="nav-item">
+          <img alt="Linkedin" title="Linkedin" class="nav-item__icon-image"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
+        </li>
+      </ul>
+    </div>
+  </nav>
   <main>
-    <section class="section-about">
-      <div class="container">
-  
+    <section class="section-about" id="about">
+      <div class="container d-flex align-content-center flex-wrap align-items-center">
+
         <div class="row">
-          <div class="col-sm-9">
+          <div class="col-sm-9 ">
             <h2 class="heading-secondary">About</h2>
-            <p>
+            <p class="paragraph">
               I am a full stack developer with graphic design experience. I have been building projects in my free time
               using mostly Javascript, React, Redux and Node.js. However, I have taken classes in other languages in the
-              past, and am always up to learning new technologies, I would love to join a team where I can contribute,
+              past, and am always up to learning new technologies! </p>
+            <p class="paragraph">I would love to join a team where I can contribute,
               learn and grow as a developer full time. I work hard, take initiative to think outside the box, and aim to
               surpass the evolving needs and expectations of my customers each and every day.
             </p>
-            <p>
+            <p class="paragraph">
               In my free time you’ll find me stuffing my face with tacos, chasing a very energetic golden retriever
               around
               a couch, or playing board games with friends.
@@ -102,91 +142,47 @@
             <img alt="Redux" title="Redux" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/redux.svg" />
             <!-- <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vue-dot-js.svg" /> -->
-            <img 
-              alt="JavaScript" title="JavaScript" class="devicons-block__icon-image"
+            <img alt="JavaScript" title="JavaScript" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" />
-            <img 
-              alt="jQuery" title="jQuery" class="devicons-block__icon-image"
+            <img alt="jQuery" title="jQuery" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jquery.svg" />
-            <img 
-              alt="Node.js" title="Node.js" 
-              class="devicons-block__icon-image devicons-block__icon-image--bigger-2"
+            <img alt="Node.js" title="Node.js" class="devicons-block__icon-image devicons-block__icon-image--bigger-2"
               src="https://icongr.am/devicon/nodejs-plain-wordmark.svg?size={number}&color={hex}" />
-            <img 
-              alt="npm (Node Package Manager)" 
-              title="npm (Node Package Manager)" 
+            <img alt="npm (Node Package Manager)" title="npm (Node Package Manager)"
               class="devicons-block__icon-image devicons-block__icon-image--bigger-1"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/npm.svg" />
-            <img 
-              alt="SQL (Structured Query Language)" 
-              title="SQL (Structured Query Language)" 
+            <img alt="SQL (Structured Query Language)" title="SQL (Structured Query Language)"
               class="devicons-block__icon-image"
               src="https://icongr.am/material/database.svg?size={number}&color={hex}" />
-            <img 
-              alt="NoSQL/MongoDB" 
-              title="NoSQL/MongoDB" 
-              class="devicons-block__icon-image"
+            <img alt="NoSQL/MongoDB" title="NoSQL/MongoDB" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mongodb.svg" />
-            <img 
-              alt="HTML5"
-               title="HTML5" 
-              class="devicons-block__icon-image"
+            <img alt="HTML5" title="HTML5" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" />
-            <img 
-              alt="CSS3" 
-              title="CSS3" 
-              class="devicons-block__icon-image"
+            <img alt="CSS3" title="CSS3" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" />
-            <img 
-              alt="Sass" 
-              title="Sass" 
-              class="devicons-block__icon-image"
+            <img alt="Sass" title="Sass" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/sass.svg" />
-            <img 
-              alt="Bootstrap" 
-              title="Bootstrap" 
-              class="devicons-block__icon-image"
+            <img alt="Bootstrap" title="Bootstrap" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bootstrap.svg" />
-            <img 
-              alt="Gulp" 
-              title="Gulp" 
-              class="devicons-block__icon-image"
+            <img alt="Gulp" title="Gulp" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gulp.svg" />
-            <img 
-              alt="GIT" 
-              title="GIT" 
-              class="devicons-block__icon-image"
+            <img alt="GIT" title="GIT" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" />
-            <img 
-              alt="Github" 
-              title="Github" 
-              class="devicons-block__icon-image"
+            <img alt="Github" title="Github" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
-            <img 
-              alt="Heroku" 
-              title="Heroku" 
-              class="devicons-block__icon-image"
+            <img alt="Heroku" title="Heroku" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/heroku.svg" />
-            <img 
-              alt="TravisCI" 
-              title="TravisCI" 
-              class="devicons-block__icon-image"
+            <img alt="TravisCI" title="TravisCI" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/travisci.svg" />
-            <img 
-              alt="Visual Studio Code" 
-              title="Visual Studio Code" 
-              class="devicons-block__icon-image"
+            <img alt="Visual Studio Code" title="Visual Studio Code" class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudiocode.svg" />
-            <img 
-              alt="Adobe Illustrator, Photoshop, InDesign" 
-              title="Adobe Illustrator, Photoshop, InDesign" 
+            <img alt="Adobe Illustrator, Photoshop, InDesign" title="Adobe Illustrator, Photoshop, InDesign"
               class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobeillustrator.svg" />
-            <img 
-              alt="Adobe Illustrator, Photoshop, InDesign" 
-              title="Adobe Illustrator, Photoshop, InDesign" 
+            <img alt="Adobe Illustrator, Photoshop, InDesign" title="Adobe Illustrator, Photoshop, InDesign"
               class="devicons-block__icon-image"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobephotoshop.svg" />
+            <div class="devicons-block__and-more heading-tertiary">and more!</div>
 
             <!-- SAVING FOR LATER - the redux/photoshop/illustrators i on devicon don't appear to work and supping img makes bigger than the i's 
               <i class="devicon-react-original"></i>
@@ -213,13 +209,29 @@
         </div>
       </div>
     </section>
+    <section class="section-projects" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <h2 class="heading-secondary">Projects</h2>
+            <h3 class="heading-tertiary">Mouse over for details on each project.</h3>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <span class="footer__copy">© 2019 Lesley Dreyer</span>
   </footer>
 
-
+  <script src="/path/to/noframework.waypoints.min.js"></script>
   <!-- <script src="https://kit.fontawesome.com/73199622c2.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
