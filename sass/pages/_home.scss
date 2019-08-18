@@ -3,6 +3,7 @@
     padding-top: 3rem;
     margin: 0 auto;
     margin-bottom: 12rem;
+
     @media screen and (min-width: 600px) {
         margin-bottom: 0;
     }
@@ -25,16 +26,16 @@
         margin: .6rem;
         width: auto;
         height: 2.7rem;
-        
+
         &--bigger-1 {
             width: auto;
             height: 3rem;
         }
-        
+
         &--bigger-2 {
             width: auto;
             height: 5rem;
-         }
+        }
     }
 
     &__and-more {
@@ -55,5 +56,10 @@
 .section-projects {
     padding-top: 3rem;
     background-color: $color-beige-light;
+    height: 90vh;
+}
+
+.section-contact {
+    padding-top: 3rem;
     height: 90vh;
 }

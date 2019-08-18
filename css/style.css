@@ -39,40 +39,47 @@ body {
 .heading-secondary {
   font-size: 4rem;
   letter-spacing: 0.05em;
-  text-align: center;
   font-weight: 900;
   text-transform: uppercase; }
-  @media screen and (min-width: 600px) {
-    .heading-secondary {
-      text-align: left; } }
 
 .heading-tertiary {
   font-family: 'Just Another Hand', cursive;
   letter-spacing: 0.03em;
   transform: scale(1.2, 1);
-  text-align: center;
-  font-size: 2.5rem; }
-  @media screen and (orientation: landscape) {
-    .heading-tertiary {
-      transform: scale(1.2, 1);
-      transform-origin: left;
-      text-align: left; } }
+  font-size: 2.5rem;
+  transform: scale(1.2, 1);
+  transform-origin: left; }
 
-.paragraph {
-  text-align: center;
+.text {
   font-size: 1.3rem; }
-  @media screen and (min-width: 600px) {
-    .paragraph {
-      text-align: left; } }
+
+.href-link,
+.href-link:focus,
+.href-link:active,
+.href-link:visited {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  transition: .2s all; }
+
+.href-link:hover {
+  font-size: 1.5rem;
+  transform: rotate(4deg); }
 
 .u-center-text {
   text-align: center; }
+
+.u-center-mobile-left-desktop {
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .u-center-mobile-left-desktop {
+      text-align: left; } }
 
 .u-display-block {
   display: block; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 2rem !important; }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
@@ -91,6 +98,49 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: black;
+  border-color: black;
+  float: right;
+  font-weight: 700;
+  transition: .2s all; }
+
+.btn-primary:hover {
+  background-color: #24A349;
+  border-color: #24A349;
+  font-size: 1.5rem;
+  transform: rotate(-4deg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.form-control {
+  border-color: rgba(36, 163, 72, 0.301); }
+
+.ul-list {
+  counter-reset: section;
+  list-style: none; }
+
+.list-item {
+  margin: 0 0 10px 0;
+  line-height: 3rem; }
+
+.list-item:before {
+  content: counter(section);
+  counter-increment: section;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem 0 0;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #24A349;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem; }
 
 .footer {
   background-color: #EAE8D7;
@@ -209,6 +259,10 @@ body {
 .section-projects {
   padding-top: 3rem;
   background-color: #EAE8D7;
+  height: 90vh; }
+
+.section-contact {
+  padding-top: 3rem;
   height: 90vh; }
 
 /*!
