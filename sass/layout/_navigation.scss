@@ -3,21 +3,21 @@
     color: black;
     font-size: 1.2rem;
     letter-spacing: 1.5px;
-}
+    // background-color: rgba(255, 255, 255, .9);}
 
-.nav-item__icon-image {
-    color: white;
-    filter: invert(.5);
-    width: 2rem;
-    height: 2rem;
-    margin: .7rem;
-    cursor: pointer;
-}
+    .nav-item__icon-image {
+        color: white;
+        filter: invert(.5);
+        width: 2rem;
+        height: 2rem;
+        margin: .7rem;
+        cursor: pointer;
+    }
 
-.navbar-nav {
-    display: flex;
-}
+    .navbar-nav {
+        display: flex;
+    }
 
-.nav-item {
-    margin: auto;
-}
+    .nav-item {
+        margin: auto;
+    }

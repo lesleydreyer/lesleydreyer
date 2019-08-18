@@ -216,19 +216,60 @@
 
     <section class="section-projects u-margin-bottom-medium" id="projects">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-9">
-            <h2 class="heading-secondary u-center-mobile-left-desktop">Projects</h2>
-            <h3 class="heading-tertiary">Mouse over for details on each project.</h3>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
+        <div class="flex-row d-flex flex-wrap-reverse">
+          <div class="col-sm-6">
+            <h3 class="heading-tertiary heading-tertiary-2  u-center-mobile-left-desktop">
+              Mouse over for details on each project.
+            </h3>
+          </div>
+          <div class="col-sm-6">
+            <h2 class="heading-secondary u-center-mobile-right-desktop">Projects</h2>
+          </div>
+        </div>
+        <div class="row u-center-text">
+          <div class="col  mb-5">
+            <img src="images/LunchLaughPhoneMockUp.png" alt="Lets Roll" />
+            <!-- This also works instead of u-center-text <img src="images/LunchLaughPhoneMockUp.png" alt="Lets Roll" class="mx-auto d-block" /> -->
+          </div>
+          <div class="col mb-5">
+            <img src="images/LetsRollPhoneMockUp.png" alt="Lets Roll" />
+          </div>
+          <div class="col  mb-5">
+            <img src="images/WhatTheSpudPhoneMockUp.png" alt="Lets Roll" />
+          </div>
+          <div class="col mb-5">
+            <img src="images/TrailTimePhoneMockUp.png" alt="Lets Roll" data-toggle="modal" data-target="#exampleModal"/>
           </div>
         </div>
       </div>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Trail Time</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+        This is a full stack application using mainly React, Redux, Node.js, HTML, CSS, Express, MongoDB, Mocha, Chai, Enzyme and Jest.
+        </p>
+        <p>
+          Trail Time is a full CRUD application as it allows users to create an account and create trails, sign in if they already have an account, view other users' trails, edit and delete their own trails.
+        </p>
+        <p><a href="https://trailtime.herokuapp.com/" target="_blank">LINK TO DEMO</a>. <br/>
+          Demo username: user1<br/>
+          Demo password: user1234 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 
     <section class="section-contact u-margin-bottom-medium" id="contact">
@@ -253,7 +294,7 @@
                 <input class="form-control text" id="inputName" type="text" name="inputName" placeholder="Your Name"
                   required>
                 <div class="valid-feedback">
-                  Looks good!
+                  Looks good!.
                 </div>
                 <div class="invalid-feedback">
                   Please add your name before submitting so I know who to respond to.

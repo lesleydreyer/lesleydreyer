@@ -10,6 +10,15 @@
     }
 }
 
+.u-center-mobile-right-desktop {
+    text-align: center;
+
+    @media screen and (min-width: 600px) {
+        text-align: right;
+    }
+}
+
+
 .u-display-block {
     display: block;
 }

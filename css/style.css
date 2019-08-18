@@ -49,6 +49,8 @@ body {
   font-size: 2.5rem;
   transform: scale(1.2, 1);
   transform-origin: left; }
+  .heading-tertiary-2 {
+    transform-origin: center; }
 
 .text {
   font-size: 1.3rem; }
@@ -74,6 +76,12 @@ body {
   @media screen and (min-width: 600px) {
     .u-center-mobile-left-desktop {
       text-align: left; } }
+
+.u-center-mobile-right-desktop {
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .u-center-mobile-right-desktop {
+      text-align: right; } }
 
 .u-display-block {
   display: block; }
@@ -198,7 +206,8 @@ body {
   text-transform: uppercase;
   color: black;
   font-size: 1.2rem;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .nav-item__icon-image {
   color: white;
@@ -215,8 +224,6 @@ body {
   margin: auto; }
 
 .section-about {
-  height: 90vh;
-  padding-top: 3rem;
   margin: 0 auto;
   margin-bottom: 12rem; }
   @media screen and (min-width: 600px) {
@@ -258,12 +265,10 @@ body {
 
 .section-projects {
   padding-top: 3rem;
-  background-color: #EAE8D7;
-  height: 90vh; }
+  background-color: #EAE8D7; }
 
 .section-contact {
-  padding-top: 3rem;
-  height: 90vh; }
+  padding-top: 3rem; }
 
 /*!
  *  Devicons 1.8.0 made by Theodore Vorillas / http://vorillaz.com 
