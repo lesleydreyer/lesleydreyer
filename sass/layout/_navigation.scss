@@ -1,23 +1,83 @@
 .navbar-nav {
     text-transform: uppercase;
-    color: black;
+    color: #000000;
     font-size: 1.2rem;
     letter-spacing: 1.5px;
-    // background-color: rgba(255, 255, 255, .9);}
+    /* background-color: rgba(255, 255, 255, .9);*/
+}
 
-    .nav-item__icon-image {
-        color: white;
-        filter: invert(.5);
-        width: 2rem;
-        height: 2rem;
-        margin: .7rem;
-        cursor: pointer;
-    }
+.nav-item__icon-image {
+    color: white;
+    filter: invert(0);
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: .7rem;
+    cursor: pointer;
 
-    .navbar-nav {
-        display: flex;
+    &:hover {
+        fill: $color-green;
     }
+}
 
-    .nav-item {
-        margin: auto;
+.navbar-nav {
+    display: flex;
+}
+
+.nav-item {
+    margin: auto;
+}
+
+
+/*modifying bootstrap - probably should do differently*/
+// .bg-dark {
+//     background-color: beige !important;
+// }
+
+.navbar-mobile {
+    background-color: $color-beige-dark;
+}
+
+
+.navbar-toggler {
+    font-size: 2.2rem;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+a.nav-link {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    &:hover,
+    :active {
+        color: $color-green;
     }
+}
+
+
+
+.navbar .navbar-nav>li>a:hover,
+.navbar .navbar-nav>li>a:focus {
+    cursor: pointer;
+}
+
+li.nav-item:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+.nav {
+    background-color: black;
+    color: white;
+    transition: all 0.15s ease;
+}
+
+.nav.past-home {
+    background-color: $color-beige-dark;
+    color: black;
+}

@@ -1,3 +1,13 @@
 .form-control {
     border-color: $color-green-light;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:visited {
+    float: none !important;
 }

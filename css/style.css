@@ -51,6 +51,17 @@ body {
   transform-origin: left; }
   .heading-tertiary-2 {
     transform-origin: center; }
+  .heading-tertiary-3 {
+    transform-origin: center; }
+    @media screen and (min-width: 576px) {
+      .heading-tertiary-3 {
+        transform-origin: left; } }
+
+.transform-fix {
+  overflow: hidden; }
+  @media screen and (orientation: landscape) {
+    .transform-fix {
+      overflow: visible; } }
 
 .text {
   font-size: 1.3rem; }
@@ -73,13 +84,13 @@ body {
 
 .u-center-mobile-left-desktop {
   text-align: center; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 576px) {
     .u-center-mobile-left-desktop {
       text-align: left; } }
 
 .u-center-mobile-right-desktop {
   text-align: center; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 576px) {
     .u-center-mobile-right-desktop {
       text-align: right; } }
 
@@ -126,7 +137,16 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .form-control {
-  border-color: rgba(36, 163, 72, 0.301); }
+  border-color: rgba(36, 163, 72, 0.301);
+  margin: 0 auto;
+  width: 90%; }
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:visited {
+  float: none !important; }
 
 .ul-list {
   counter-reset: section;
@@ -139,16 +159,43 @@ body {
 .list-item:before {
   content: counter(section);
   counter-increment: section;
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  margin: 0 1rem 0 0;
-  border-radius: 100%;
-  text-align: center;
-  background-color: #24A349;
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem; }
+  margin: 0 1rem 0 0; }
+
+.list-item:not(:last-child):after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 20%;
+  /* Change this to whatever width you want. */
+  padding-top: 15px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 2px solid #24A349;
+  /* This creates the border. Replace black with whatever color you want. */
+  border-end-start-radius: 100%;
+  border-end-end-radius: 100%; }
+
+@media screen and (min-width: 576px) {
+  .list-item:not(:last-child):after {
+    display: none; }
+  .list-item:before {
+    content: counter(section);
+    counter-increment: section;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem 0 0;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #24A349;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem; } }
+
+.modal-title {
+  padding-left: 1rem; }
 
 .footer {
   background-color: #EAE8D7;
@@ -157,8 +204,7 @@ body {
   display: flex; }
   .footer__copy {
     text-align: center;
-    margin: auto;
-    font-size: 70%; }
+    margin: auto; }
 
 .header {
   height: 95vh;
@@ -171,6 +217,10 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 1.2rem; }
+  @media screen and (min-height: 567px) {
+    .header {
+      background-size: 70%;
+      background-position-x: center; } }
   @media screen and (orientation: landscape) {
     .header {
       display: table-cell;
@@ -204,18 +254,20 @@ body {
 
 .navbar-nav {
   text-transform: uppercase;
-  color: black;
+  color: #000000;
   font-size: 1.2rem;
   letter-spacing: 1.5px;
-  background-color: rgba(255, 255, 255, 0.9); }
+  /* background-color: rgba(255, 255, 255, .9);*/ }
 
 .nav-item__icon-image {
   color: white;
-  filter: invert(0.5);
-  width: 2rem;
-  height: 2rem;
+  filter: invert(0);
+  width: 2.4rem;
+  height: 2.4rem;
   margin: .7rem;
   cursor: pointer; }
+  .nav-item__icon-image:hover {
+    fill: #24A349; }
 
 .navbar-nav {
   display: flex; }
@@ -223,10 +275,51 @@ body {
 .nav-item {
   margin: auto; }
 
+/*modifying bootstrap - probably should do differently*/
+.navbar-mobile {
+  background-color: #D9D6B7; }
+
+.navbar-toggler {
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+a.nav-link {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600; }
+  a.nav-link:hover,
+  a.nav-link :active {
+    color: #24A349; }
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+  cursor: pointer; }
+
+li.nav-item:hover {
+  cursor: pointer; }
+
+.nav {
+  background-color: black;
+  color: white;
+  transition: all 0.15s ease; }
+
+.nav.past-home {
+  background-color: #D9D6B7;
+  color: black; }
+
+.section {
+  min-height: calc(100vh - 48px);
+  padding-top: 6rem; }
+  @media screen and (min-width: 576px) {
+    .section {
+      padding-top: 10rem; } }
+
 .section-about {
   margin: 0 auto;
   margin-bottom: 12rem; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 576px) {
     .section-about {
       margin-bottom: 0; } }
 
@@ -264,11 +357,13 @@ body {
         width: 60%; } }
 
 .section-projects {
-  padding-top: 3rem;
   background-color: #EAE8D7; }
 
-.section-contact {
-  padding-top: 3rem; }
+.project-img {
+  cursor: pointer; }
+
+.modal-image {
+  width: 100%; }
 
 /*!
  *  Devicons 1.8.0 made by Theodore Vorillas / http://vorillaz.com 

@@ -5,7 +5,7 @@
 .u-center-mobile-left-desktop {
     text-align: center;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 576px) {
         text-align: left;
     }
 }
@@ -13,7 +13,7 @@
 .u-center-mobile-right-desktop {
     text-align: center;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 576px) {
         text-align: right;
     }
 }

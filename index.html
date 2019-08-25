@@ -19,7 +19,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-end">
+
+  <nav class="navbar navbar-expand-sm navbar-mobile justify-content-center fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span>MENU</span>
@@ -28,12 +29,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <img alt="Github" title="Github" class="nav-item__icon-image"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+          <a href="https://www.linkedin.com/in/lesley-dreyer-3323414" target="_blank">
+            <img alt="Linkedin" title="Linkedin" class="nav-item__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
+          </a>
         </li>
         <li class="nav-item">
-          <img alt="Linkedin" title="Linkedin" class="nav-item__icon-image"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
+          <a href="https://github.com/lesleydreyer" target="_blank">
+            <img alt="Github" title="Github" class="nav-item__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+          </a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
@@ -58,8 +63,8 @@
 
 
 
-  <header class="header" id="home">
-    <div id="home">
+  <header class="header section" id="home">
+    <div id="home" class="container">
       <h1 class="heading-primary">
         <span class="heading-primary--main u-display-block">Lesley Dreyer</span>
         <span class="heading-primary--sub u-display-block">full stack developer</span>
@@ -71,7 +76,7 @@
 
 
   <!--WHITE NAV BAR-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top container navbar-wide">
     <a class="navbar-brand" href="#home">
       <img src="./images/LesleyDreyerLogo.svg" width="200rem" height="auto" alt="">
     </a>
@@ -98,21 +103,24 @@
           <a class="nav-link" href="#">Resume</a>
         </li>
         <li class="nav-item">
-          <img alt="Github" title="Github" class="nav-item__icon-image"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+          <a href="https://github.com/lesleydreyer" target="_blank">
+            <img alt="Github" title="Github" class="nav-item__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+          </a>
         </li>
         <li class="nav-item">
-          <img alt="Linkedin" title="Linkedin" class="nav-item__icon-image"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
+          <a href="https://www.linkedin.com/in/lesley-dreyer-3323414" target="_blank">
+            <img alt="Linkedin" title="Linkedin" class="nav-item__icon-image"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
+          </a>
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 
 
-  <main>
-
-    <section class="section-about u-margin-bottom-medium" id="about">
+  <main id="past-home">
+    <section class="section section-about u-margin-bottom-medium" id="about">
       <div class="container d-flex align-content-center flex-wrap align-items-center">
 
         <div class="row">
@@ -214,70 +222,100 @@
       </div>
     </section>
 
-    <section class="section-projects u-margin-bottom-medium" id="projects">
+    <section class="section section-projects u-margin-bottom-medium" id="projects">
       <div class="container">
         <div class="flex-row d-flex flex-wrap-reverse">
           <div class="col-sm-6">
-            <h3 class="heading-tertiary heading-tertiary-2  u-center-mobile-left-desktop">
-              Mouse over for details on each project.
-            </h3>
+            <div class="transform-fix">
+              <h3 class="heading-tertiary heading-tertiary-2  u-center-mobile-left-desktop">
+                Click each project for details.
+              </h3>
+            </div>
           </div>
           <div class="col-sm-6">
             <h2 class="heading-secondary u-center-mobile-right-desktop">Projects</h2>
           </div>
         </div>
         <div class="row u-center-text">
-          <div class="col  mb-5">
-            <img src="images/LunchLaughPhoneMockUp.png" alt="Lets Roll" />
+          <div class="col mb-5">
+            <img src="images/LunchLaughPhoneMockUp.png" class="project-img" alt="Lets Roll" />
             <!-- This also works instead of u-center-text <img src="images/LunchLaughPhoneMockUp.png" alt="Lets Roll" class="mx-auto d-block" /> -->
           </div>
           <div class="col mb-5">
-            <img src="images/LetsRollPhoneMockUp.png" alt="Lets Roll" />
-          </div>
-          <div class="col  mb-5">
-            <img src="images/WhatTheSpudPhoneMockUp.png" alt="Lets Roll" />
+            <img src="images/LetsRollPhoneMockUp.png" class="project-img" alt="Lets Roll" />
           </div>
           <div class="col mb-5">
-            <img src="images/TrailTimePhoneMockUp.png" alt="Lets Roll" data-toggle="modal" data-target="#exampleModal"/>
+            <img src="images/WhatTheSpudPhoneMockUp.png" class="project-img" alt="Lets Roll" data-toggle="modal"
+              data-target="#exampleModal2" />
+          </div>
+          <div class="col mb-5">
+            <img src="images/TrailTimePhoneMockUp.png" class="project-img" alt="Trail Time" data-toggle="modal"
+              data-target="#trailtime-modal" />
           </div>
         </div>
       </div>
       <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Trail Time</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="modal fade" id="trailtime-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title heading-secondary" id="exampleModalLabel">Trail Time</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p>
+                      Trail Time is a full stack and CRUD application. It allows users to create an account and create
+                      trails,
+                      sign up or sign in
+                      if they already have an account, view other users trails, add, edit and delete their own
+                      trails.<br /><br />
+                      FRONT END: HTML, CSS, React | Redux<br />
+                      BACK END: Node.js, Express, MongoDB<br />
+                      TESTING: Mocha, Chai, Enzyme, Jest
+                    </p>
+                    <p>
+                      <a href="https://github.com/lesleydreyer/trailtime" target="_blank">LINK TO CODE > </a><br />
+                      <a href="https://trailtime.herokuapp.com/" target="_blank">LINK TO DEMO > </a> <br />
+                      Demo username: user1<br />
+                      Demo password: user1234
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- <img src="images/TrailTimePhoneMockUp.png" alt="trail time mockup" /> -->
+                    <!-- <img src="images/collage.png" alt="trail time" /> -->
+                    <img src="images/iMac-Mockup.jpg" alt="Trail Time Picture" class="modal-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
-      <div class="modal-body">
-        <p>
-        This is a full stack application using mainly React, Redux, Node.js, HTML, CSS, Express, MongoDB, Mocha, Chai, Enzyme and Jest.
-        </p>
-        <p>
-          Trail Time is a full CRUD application as it allows users to create an account and create trails, sign in if they already have an account, view other users' trails, edit and delete their own trails.
-        </p>
-        <p><a href="https://trailtime.herokuapp.com/" target="_blank">LINK TO DEMO</a>. <br/>
-          Demo username: user1<br/>
-          Demo password: user1234 
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
     </section>
 
-    <section class="section-contact u-margin-bottom-medium" id="contact">
+    <section class="section section-contact u-margin-bottom-medium" id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6 u-center-mobile-left-desktop">
             <h2 class="heading-secondary">Contact</h2>
-            <h3 class="heading-tertiary u-margin-bottom-small">Three easy ways to reach me!</h3>
+            <div class="transform-fix">
+              <h3 class="heading-tertiary heading-tertiary-3  u-margin-bottom-small ">Three
+                easy ways to reach
+                me!</h3>
+            </div>
             <ul class="ul-list text u-margin-bottom-medium">
               <li class="list-item">Submit the form provided.</li>
               <li class="list-item">Email me at <a class="href-link"
@@ -322,7 +360,7 @@
                   Please add a message before submitting.
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary text">Submit</button>
+              <button type="submit" class="btn btn-primary text ">Submit</button>
             </form>
           </div>
         </div>
@@ -333,7 +371,7 @@
     <span class="footer__copy">© 2019 Lesley Dreyer</span>
   </footer>
 
-  <script src="/path/to/noframework.waypoints.min.js"></script>
+  <!-- <script src="/path/to/noframework.waypoints.min.js"></script> -->
   <!-- <script src="https://kit.fontawesome.com/73199622c2.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

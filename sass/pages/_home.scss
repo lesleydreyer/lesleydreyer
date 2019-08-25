@@ -1,9 +1,18 @@
+.section {
+    min-height: calc(100vh - 48px);
+    padding-top: 6rem;
+
+    @media screen and (min-width: 576px) {
+        padding-top: 10rem;
+    }
+}
+
 .section-about {
     // height: 90vh;    padding-top: 3rem;
     margin: 0 auto;
     margin-bottom: 12rem;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 576px) {
         margin-bottom: 0;
     }
 }
@@ -53,12 +62,21 @@
 }
 
 .section-projects {
-    padding-top: 3rem;
     background-color: $color-beige-light;
     // height: 90vh;
+
 }
 
-.section-contact {
-    padding-top: 3rem;
-    // height: 90vh;
+// .section-contact {
+//     // height: 90vh;
+// }
+
+
+.project-img {
+    cursor: pointer;
+}
+
+
+.modal-image {
+    width: 100%;
 }

@@ -51,7 +51,29 @@ body {
         // for projects section
         transform-origin: center;
     }
+
+    &-3 {
+        transform-origin: center;
+
+        @media screen and (min-width: 576px) {
+            // for projects section
+            transform-origin: left;
+        }
+    }
+
 }
+
+
+//the transform for just another hand font added extra white space in contact section so wrapped in a div with overflow hidden
+.transform-fix {
+    overflow: hidden;
+
+    @media screen and (orientation: landscape) {
+        overflow: visible;
+    }
+}
+
+
 
 .text {
     font-size: 1.3rem;
