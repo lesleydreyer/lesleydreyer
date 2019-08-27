@@ -5,63 +5,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Lesley Dreyer - Full Stack Developer</title>
-  <link href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+
+  <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
+  <!-- LEFT IN CASE NEED IN FUTURE <link href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'> -->
+  <!-- LEFT IN CASE NEED IN FUTURE <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
 
+  <!-- BOOTSTRAP CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS COMPILED BY SASS -->
   <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-sm navbar-mobile justify-content-center fixed-top">
+  <nav class="navbar navbar-expand-sm navbar-mobile justify-content-center fixed-top" id="main-navbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span>MENU</span>
     </button>
-
+<div class="container">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="https://www.linkedin.com/in/lesley-dreyer-3323414" target="_blank">
-            <img alt="Linkedin" title="Linkedin" class="nav-item__icon-image"
-              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
+      <ul class="navbar-nav navbar-nav-icons">
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a href="https://www.linkedin.com/in/lesley-dreyer-3323414" target="_blank" class="nav-link">
+            <i class="fab fa-linkedin" alt="Linkedin"></i>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="https://github.com/lesleydreyer" target="_blank">
-            <img alt="Github" title="Github" class="nav-item__icon-image"
-              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a href="https://github.com/lesleydreyer" target="_blank" class="nav-link">
+            <i class="fab fa-github" alt="Github"></i>
           </a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link" href="#projects">Projects</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link" href="#">Resume</a>
         </li>
       </ul>
     </div>
+  </div>
   </nav>
-
-
+ 
 
   <header class="header section" id="home">
     <div id="home" class="container">
@@ -73,50 +73,6 @@
       <p class="heading-primary--description">I'm a full stack developer and graphic designer based in Arizona.</p>
     </div>
   </header>
-
-
-  <!--WHITE NAV BAR-->
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top container navbar-wide">
-    <a class="navbar-brand" href="#home">
-      <img src="./images/LesleyDreyerLogo.svg" width="200rem" height="auto" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto ">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/lesleydreyer" target="_blank">
-            <img alt="Github" title="Github" class="nav-item__icon-image"
-              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.linkedin.com/in/lesley-dreyer-3323414" target="_blank">
-            <img alt="Linkedin" title="Linkedin" class="nav-item__icon-image"
-              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
 
 
   <main id="past-home">
@@ -372,7 +328,7 @@
   </footer>
 
   <!-- <script src="/path/to/noframework.waypoints.min.js"></script> -->
-  <!-- <script src="https://kit.fontawesome.com/73199622c2.js"></script> -->
+  <script src="https://kit.fontawesome.com/73199622c2.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

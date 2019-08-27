@@ -10,4 +10,10 @@
 .btn-primary:hover,
 .btn-primary:visited {
     float: none !important;
+    margin: 0 auto;
+    display: block;
+
+    @media screen and (min-width: 576px) {
+        float: right !important;
+    }
 }
