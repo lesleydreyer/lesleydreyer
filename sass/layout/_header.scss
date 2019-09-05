@@ -1,0 +1,104 @@
+.header {
+    width: 100vw;
+    text-align: center;
+    padding-top: 5rem;
+    background-color: black;
+
+    @media screen and (min-width: 360px) {
+        padding-top: 10rem;
+    }
+
+    @media screen and (min-width: 576px) {
+        padding-top: 8rem;
+        min-height: calc(100vh - 52px); //100 - 52px navbar
+    }
+
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    //iphone 5/SE was acting up so added some custom styles to phones around that size
+    &-text {
+        @media screen and (min-width: 450px) and (max-width: 600px) {
+            max-width: 60%;
+            padding-left: 2rem;
+            margin-top: -5rem;
+        }
+
+        @media screen and (orientation: portrait) {
+            width: 100%;
+        }
+    }
+
+    //iphone 5/SE was acting up so added some custom styles to phones around that size
+    &-pic {
+        @media screen and (min-width: 450px) and (max-width: 725px) {
+            width: 40%;
+        }
+
+        @media screen and (orientation: portrait) {
+            width: 100%;
+        }
+    }
+
+
+}
+
+.heading-primary,
+.heading-primary--description {
+    @media screen and (orientation: landscape) {
+        text-align: left;
+    }
+}
+
+
+@media screen and (orientation: landscape) {
+    .heading-primary--sub {
+        padding-left: 4.2px;
+    }
+}
+
+
+.hr {
+    /*top right bottom left;*/
+    margin: .9rem auto 1.1rem auto;
+    border-top: none;
+    border: 3px solid $color-green;
+    width: 25%;
+    border-radius: 3px;
+
+    @media screen and (orientation: landscape) {
+        margin: .9rem 1rem 1.1rem .05rem;
+    }
+}
+
+//i pad pro 
+#home .row .header-text,
+#home .row .header-pic {
+    @media screen and (min-width: 768px) and (orientation: portrait) {
+        min-width: 100%;
+    }
+}
+
+
+//FOR REFERENCE
+// // Small devices (landscape phones, 576px and up) // @media (min-width: 576px) {
+//     ...
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//     ...
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//     ...
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//     ...
+// }

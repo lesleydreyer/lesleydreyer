@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Lesley Dreyer Developer Portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesleydreyer/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Lesley Dreyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lesleydreyer/portfolio/issues"
+  },
+  "homepage": "https://github.com/lesleydreyer/portfolio#readme"
+}

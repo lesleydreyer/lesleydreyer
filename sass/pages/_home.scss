@@ -1,0 +1,76 @@
+.section {
+    padding-top: 5rem;
+    min-height: calc(95vh - 39px);
+
+    @media screen and (min-width: 576px) {
+        padding-top: 8rem;
+        min-height: calc(100vh - $footer-height - 52px);
+        //100 - 5vh footer - 52px navbar
+    }
+
+    &-about {
+        margin: 0 auto;
+        margin-bottom: 12rem;
+
+        @media screen and (min-width: 576px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &-projects {
+        background-color: $color-beige-light;
+        padding-bottom: 2rem;
+
+        & h3 {
+            margin-bottom: 2rem;
+        }
+    }
+
+}
+
+
+.devicons-block {
+    text-align: center;
+    border: 1px solid $color-green;
+    border-radius: 2px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 80vw;
+    margin: 2rem auto;
+
+
+    &__icon-image {
+        margin: .6rem;
+        width: auto;
+        height: 2.7rem;
+
+        &--bigger-1 {
+            width: auto;
+            height: 3rem;
+        }
+
+        &--bigger-2 {
+            width: auto;
+            height: 5rem;
+        }
+    }
+
+    &__and-more {
+        background-color: $color-beige-dark;
+        position: relative;
+        bottom: -20px;
+        height: 4rem;
+        width: 30%;
+        margin: 0 auto;
+        clip-path: polygon(0 4%, 100% 0, 94% 91%, 5% 100%);
+
+        @media screen and (min-width: 600px) {
+            width: 60%;
+        }
+    }
+}
+
+
+.project-img {
+    cursor: pointer;
+}
