@@ -27,50 +27,60 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span>MENU</span>
     </button>
-<div class="container">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav navbar-nav-icons">
-        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a href="https://www.linkedin.com/in/lesley-dreyer-3323414" target="_blank" class="nav-link">
-            <i class="fab fa-linkedin" alt="Linkedin"></i>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a href="https://github.com/lesleydreyer" target="_blank" class="nav-link">
-            <i class="fab fa-github" alt="Github"></i>
-          </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#">Resume</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-nav-icons">
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a href="https://www.linkedin.com/in/lesley-dreyer-3323414" target="_blank" class="nav-link">
+              <i class="fab fa-linkedin" alt="Linkedin"></i>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a href="https://github.com/lesleydreyer" target="_blank" class="nav-link">
+              <i class="fab fa-github" alt="Github"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="./images/LesleyDreyerResume.pdf" target="blank">Resume</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
   </nav>
- 
 
-  <header class="header section" id="home">
+  <!-- already built, but looks like should have done as jumbotron if using bootstrap -->
+  <header class="header" id="home">
     <div id="home" class="container">
-      <h1 class="heading-primary">
-        <span class="heading-primary--main u-display-block">Lesley Dreyer</span>
-        <span class="heading-primary--sub u-display-block">full stack developer</span>
-      </h1>
-      <hr class="hr u-center-text" />
-      <p class="heading-primary--description">I'm a full stack developer and graphic designer based in Arizona.</p>
+      <div class="row">
+        <div class="col-sm-6 align-self-center header-text">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main u-display-block">Lesley Dreyer</span>
+            <span class="heading-primary--sub u-display-block">full stack developer</span>
+          </h1>
+          <hr class="hr u-center-text" />
+          <p class="heading-primary--description">I'm a full stack developer and graphic designer based in Arizona.
+          </p>
+
+
+        </div>
+        <div class="col-sm-6  header-img align-self-end header-pic">
+          <img src="images/LesleyPic3.jpg" alt="lesley" class="" />
+        </div>
+      </div>
     </div>
   </header>
 
@@ -182,11 +192,9 @@
       <div class="container">
         <div class="flex-row d-flex flex-wrap-reverse">
           <div class="col-sm-6">
-            <div class="transform-fix">
-              <h3 class="heading-tertiary heading-tertiary-2  u-center-mobile-left-desktop">
-                Click each project for details.
-              </h3>
-            </div>
+            <h3 class="heading-tertiary heading-tertiary-2  u-center-mobile-left-desktop">
+              Click each project for details.
+            </h3>
           </div>
           <div class="col-sm-6">
             <h2 class="heading-secondary u-center-mobile-right-desktop">Projects</h2>
@@ -194,15 +202,17 @@
         </div>
         <div class="row u-center-text">
           <div class="col mb-5">
-            <img src="images/LunchLaughPhoneMockUp.png" class="project-img" alt="Lets Roll" />
+            <img src="images/LunchLaughPhoneMockUp.png" class="project-img" alt="Lunch and a Laugh" data-toggle="modal"
+              data-target="#lunchlaugh-modal" />
             <!-- This also works instead of u-center-text <img src="images/LunchLaughPhoneMockUp.png" alt="Lets Roll" class="mx-auto d-block" /> -->
           </div>
           <div class="col mb-5">
-            <img src="images/LetsRollPhoneMockUp.png" class="project-img" alt="Lets Roll" />
+            <img src="images/LetsRollPhoneMockUp.png" class="project-img" alt="Let's Roll" data-toggle="modal"
+              data-target="#letsroll-modal" />
           </div>
           <div class="col mb-5">
-            <img src="images/WhatTheSpudPhoneMockUp.png" class="project-img" alt="Lets Roll" data-toggle="modal"
-              data-target="#exampleModal2" />
+            <img src="images/WhatTheSpudPhoneMockUp.png" class="project-img" alt="What the Spud" data-toggle="modal"
+              data-target="#whatthespud-modal" />
           </div>
           <div class="col mb-5">
             <img src="images/TrailTimePhoneMockUp.png" class="project-img" alt="Trail Time" data-toggle="modal"
@@ -210,13 +220,150 @@
           </div>
         </div>
       </div>
-      <!-- Modal -->
-      <div class="modal fade" id="trailtime-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+      <!-- Lunch and a Laugh Modal -->
+      <div class="modal fade" id="lunchlaugh-modal" tabindex="-1" role="dialog" aria-labelledby="lunchLaughModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title heading-secondary" id="exampleModalLabel">Trail Time</h5>
+              <h5 class="modal-title heading-secondary" id="lunchLaughModalLabel">Lunch and a Laugh</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p>
+                      This application allows users to search for a restaurant through the Foursquare API and also
+                      provides a joke from a
+                      jokes API.<br /><br />
+                      FRONT END: HTML, CSS, JavaScript, jQuery<br />
+                    </p>
+                    <p>
+                      <a href="https://github.com/lesleydreyer/LunchAndALaugh" target="_blank">LINK TO CODE > </a><br />
+                      <a href="https://lesleydreyer.github.io/LunchAndALaugh/" target="_blank">LINK TO DEMO > </a>
+                      <br />
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- <img src="images/TrailTimePhoneMockUp.png" alt="trail time mockup" /> -->
+                    <!-- <img src="images/collage.png" alt="trail time" /> -->
+                    <img src="images/desktop-lunchlaugh.jpg" alt="Trail Time Picture" class="modal-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+      <!-- Let's Roll Modal -->
+      <div class="modal fade" id="letsroll-modal" tabindex="-1" role="dialog" aria-labelledby="letsRollModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title heading-secondary" id="letsRollModalLabel">Let's Roll</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p>
+                      This is a full stack and full CRUD application that allows users to schedule board game sessions
+                      with others.<br /><br />
+                      FRONT END: HTML, CSS, JavaScript, jQuery<br />
+                      BACK END: Node.js, Express, MongoDB<br />
+                      TESTING: Mocha, Chai, TravisCI
+                    </p>
+                    <p>
+                      <a href="https://github.com/lesleydreyer/letsroll" target="_blank">LINK TO CODE > </a><br />
+                      <a href="https://letsroll.herokuapp.com/" target="_blank">LINK TO DEMO > </a> <br />
+                      Demo username: user1<br />
+                      Demo password: user1234
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- <img src="images/TrailTimePhoneMockUp.png" alt="trail time mockup" /> -->
+                    <!-- <img src="images/collage.png" alt="trail time" /> -->
+                    <img src="images/desktop-letsroll.jpg" alt="Trail Time Picture" class="modal-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+      <!-- What the Spud Modal -->
+      <div class="modal fade" id="whatthespud-modal" tabindex="-1" role="dialog" aria-labelledby="whatSpudModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title heading-secondary" id="whatSpudModalLabel">What the Spud</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p>
+                      This is an application that is still in progress. It allows allows users to view and add recipes
+                      for potato dishes.<br /><br />
+                      FRONT END: HTML, CSS, React<br />
+                      BACK END: Firebase<br />
+                    </p>
+                    <p>
+                      <a href="https://github.com/lesleydreyer/what-the-spud" target="_blank">LINK TO CODE > </a><br />
+                      <a href="https://whatthespud-d726f.firebaseapp.com/" target="_blank">LINK TO DEMO > </a> <br />
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- <img src="images/TrailTimePhoneMockUp.png" alt="trail time mockup" /> -->
+                    <!-- <img src="images/collage.png" alt="trail time" /> -->
+                    <img src="images/desktop-whatthespud.jpg" alt="Trail Time Picture" class="modal-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Trail Time Modal -->
+      <div class="modal fade" id="trailtime-modal" tabindex="-1" role="dialog" aria-labelledby="trailTimeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title heading-secondary" id="trailTimeModalLabel">Trail Time</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -231,7 +378,7 @@
                       sign up or sign in
                       if they already have an account, view other users trails, add, edit and delete their own
                       trails.<br /><br />
-                      FRONT END: HTML, CSS, React | Redux<br />
+                      FRONT END: HTML, CSS, React, Redux<br />
                       BACK END: Node.js, Express, MongoDB<br />
                       TESTING: Mocha, Chai, Enzyme, Jest
                     </p>
@@ -245,7 +392,7 @@
                   <div class="col-sm-6">
                     <!-- <img src="images/TrailTimePhoneMockUp.png" alt="trail time mockup" /> -->
                     <!-- <img src="images/collage.png" alt="trail time" /> -->
-                    <img src="images/iMac-Mockup.jpg" alt="Trail Time Picture" class="modal-image" />
+                    <img src="images/desktop-trailtime.jpg" alt="Trail Time Picture" class="modal-image" />
                   </div>
                 </div>
               </div>
@@ -267,11 +414,9 @@
         <div class="row">
           <div class="col-sm-6 u-center-mobile-left-desktop">
             <h2 class="heading-secondary">Contact</h2>
-            <div class="transform-fix">
-              <h3 class="heading-tertiary heading-tertiary-3  u-margin-bottom-small ">Three
-                easy ways to reach
-                me!</h3>
-            </div>
+            <h3 class="heading-tertiary heading-tertiary-3  u-margin-bottom-small ">Three
+              easy ways to reach
+              me!</h3>
             <ul class="ul-list text u-margin-bottom-medium">
               <li class="list-item">Submit the form provided.</li>
               <li class="list-item">Email me at <a class="href-link"

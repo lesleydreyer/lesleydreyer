@@ -1,7 +1,7 @@
 .footer {
     background-color: $color-beige-light;
     bottom: 0;
-    height: 5vh;
+    height: $footer-height;
     display: flex;
 
     &__copy {

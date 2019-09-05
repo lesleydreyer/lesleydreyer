@@ -1,21 +1,33 @@
 .section {
-    min-height: calc(100vh - 48px);
     padding-top: 5rem;
+    min-height: calc(95vh - 39px);
 
     @media screen and (min-width: 576px) {
         padding-top: 8rem;
+        min-height: calc(100vh - $footer-height - 52px);
+        //100 - 5vh footer - 52px navbar
     }
+
+    &-about {
+        margin: 0 auto;
+        margin-bottom: 12rem;
+
+        @media screen and (min-width: 576px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &-projects {
+        background-color: $color-beige-light;
+        padding-bottom: 2rem;
+
+        & h3 {
+            margin-bottom: 2rem;
+        }
+    }
+
 }
 
-
-.section-about {
-    margin: 0 auto;
-    margin-bottom: 12rem;
-
-    @media screen and (min-width: 576px) {
-        margin-bottom: 0;
-    }
-}
 
 .devicons-block {
     text-align: center;
@@ -26,9 +38,6 @@
     max-width: 80vw;
     margin: 2rem auto;
 
-    /*@media screen and (min-width: 600px) {
-        margin: 2rem;
-    }*/
 
     &__icon-image {
         margin: .6rem;
@@ -61,19 +70,7 @@
     }
 }
 
-.section-projects {
-    background-color: $color-beige-light;
-    padding-bottom: 2rem;
-
-    & h3 {
-        margin-bottom: 2rem;
-    }
-}
 
 .project-img {
     cursor: pointer;
 }
-
-
-// .section-contact {
-// }

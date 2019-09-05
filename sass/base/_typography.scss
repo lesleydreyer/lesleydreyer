@@ -9,6 +9,24 @@ body {
         color: white;
         font-weight: 800;
         font-size: 1.7em;
+
+        @media screen and (min-width: 768px) and (orientation: portrait) {
+            font-size: 8rem;
+        }
+
+        @media screen and (min-width: 768px) and (min-height: 500px) {
+            font-size: 8rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 9rem;
+            margin-top: 3rem;
+        }
+
+        @media screen and (min-width: 1024px) and (min-height: 800px) {
+            font-size: 10rem;
+            margin-top: 10rem;
+        }
     }
 
     &--sub {
@@ -17,9 +35,16 @@ body {
         letter-spacing: 0.03em;
         font-size: 4rem;
 
-        @media screen and (orientation: landscape) {
-            transform: scale(1.2, 1);
-            transform-origin: left;
+        @media screen and (min-width: 768px) and (orientation: portrait) {
+            font-size: 7rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 8.5rem;
+        }
+
+        @media screen and (min-width: 1024px) and (min-height: 800px) {
+            font-size: 10rem;
         }
     }
 
@@ -27,9 +52,26 @@ body {
         color: white;
         font-size: 1.6rem;
         font-weight: 500;
-    }
 
+        @media screen and (min-width: 360px) and (max-width: 450px) {
+            font-size: 1.8rem;
+        }
+
+        @media screen and (min-width: 768px) and (orientation: portrait) {
+            font-size: 2.6rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 3rem;
+        }
+
+        @media screen and (min-width: 1024px) and (min-height: 800px) {
+            font-size: 3.2rem;
+        }
+
+    }
 }
+
 
 .heading-secondary {
     font-size: 4rem;
@@ -42,36 +84,9 @@ body {
 .heading-tertiary {
     font-family: 'Just Another Hand', cursive;
     letter-spacing: 0.03em;
-    transform: scale(1.2, 1);
     font-size: 2.5rem;
-    transform: scale(1.2, 1);
-    transform-origin: left;
-
-    &-2 {
-        // for projects section
-        transform-origin: center;
-    }
-
-    &-3 {
-        transform-origin: center;
-
-        @media screen and (min-width: 576px) {
-            // for projects section
-            transform-origin: left;
-        }
-    }
-
 }
 
-
-//the transform for just another hand font added extra white space in contact section so wrapped in a div with overflow hidden
-.transform-fix {
-    overflow: hidden;
-
-    @media screen and (orientation: landscape) {
-        overflow: visible;
-    }
-}
 
 
 
